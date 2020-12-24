@@ -2,6 +2,6 @@
 
 <br/>
 
-<p styles={{background-color: red}}>
+<p styles={{backgroundColor: 'red'}}>
     Использование библиотеки React. Практика работы с scss, анимациями. Два варианта создания слайдера(карусели)
 </p>
