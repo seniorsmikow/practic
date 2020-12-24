@@ -1,0 +1,143 @@
+.main {
+    background-color: red;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.man__wrapper {
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+
+.man__head {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    right: calc(50% - 7.5px);
+    &::after {
+        content: "Let's learn JS!";
+        width: 300px;
+        height: 50px;
+        background-color: #fff;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+    }
+}
+
+.man__body {
+    width: 12px;
+    height: 35px;
+    border-radius: 4px;
+    background-color: black;
+    position: absolute;
+    top: 16px;
+    right: calc(50% - 6px);
+}
+
+.man__foot_right {
+    width: 8px;
+    height: 35px;
+    border-radius: 4px;
+    background-color: black;
+    position: absolute;
+    top: 50px;
+    right: calc(50% - 4px);
+    transform: rotate(-26deg);
+    transform-origin: 0% 0%;
+    animation: mooveRightFeet 2s infinite ease-in-out;
+}
+
+.man__foot_left {
+    width: 8px;
+    height: 35px;
+    border-radius: 4px;
+    background-color: black;
+    position: absolute;
+    top: 50px;
+    right: calc(50% - 5px);
+    transform: rotate(30deg);
+    transform-origin: 0% 0%;
+    animation: mooveLeftFeet 2s infinite ease-in-out;
+}
+
+.man__hand_left {
+    width: 8px;
+    height: 34px;
+    border-radius: 4px;
+    background-color: black;
+    position: absolute;
+    top: 18px;
+    right: calc(50% - 7px);
+    transform: rotate(-23deg);
+    transform-origin: 0% 0%;
+    animation: mooveLeftHand 2s infinite ease-in-out;
+}
+
+.man__hand_right {
+    width: 8px;
+    height: 33px;
+    border-radius: 4px;
+    background-color: black;
+    position: absolute;
+    top: 18px;
+    right: calc(50% - 1px);
+    transform: rotate(25deg);
+    transform-origin: 0% 0%;
+    animation: mooveRightHand 2s infinite ease-in-out;
+}
+
+@keyframes mooveRightFeet {
+    50% {
+        transform: translateX(-5px);
+        transform: rotate(16deg);
+        transform-origin: 0% 0%;
+    }
+}
+
+@keyframes mooveLeftFeet {
+    51% {
+        transform: rotate(-28deg);
+    }
+    49% {
+        transform: rotate(-30deg);
+    }
+}
+
+@keyframes mooveLeftHand {
+    50% {
+        transform: translateX(-5px) rotate(13deg);
+    }
+}
+
+@keyframes mooveRightHand {
+    50% {
+        transform: translateX(5px) rotate(-20deg);
+    }
+}
+
+.road {
+    margin-top: 2px;
+    width: 100px;
+    height: 4px;
+    background-color: black;
+    animation: mooveRoad 2s infinite ease-in-out;
+}
+
+@keyframes mooveRoad {
+    50% {
+        transform: translateY(2px);
+        width: 105px;
+    }
+}

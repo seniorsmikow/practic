@@ -1,0 +1,38 @@
+.slider__wrapper {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.slider__container {
+    overflow: hidden;
+    background-color: yellow;
+}
+
+.slider__track {
+    display: flex;
+    transition: .2s; // чтобы слайдер был плавным
+}
+
+.slider__item {
+    height: 100px;
+    min-width: 200px;
+    animation: transformItem 1s ease-in;
+}
+
+.slider__item:nth-child(3n+1) {
+    background-color: red;
+}
+
+.slider__item:nth-child(3n+2) {
+    background-color: rgb(55, 0, 255);
+}
+
+.slider__item:nth-child(3n+3) {
+    background-color: rgb(61, 161, 36);
+}
+
+@keyframes transformItem {
+    100% {
+        transform: translateX(200px);
+    }
+}

@@ -1,0 +1,49 @@
+.lighthouse__wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('./../../img/zakat-more-maak1.jpg') center center / 100% no-repeat fixed;
+    position: relative;
+}
+
+.first__light {
+    width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+    border-right: 280px solid #efd05f;
+    filter: blur(10px);
+    border-bottom: 50px solid transparent;
+    position: fixed;
+    top: 135px;
+    left: 265px;
+    animation: light 4s ease-in-out infinite;
+    
+}
+
+.second__light {
+    width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-left: 270px solid #efd05f;
+	border-bottom: 50px solid transparent;
+    filter: blur(10px);
+    position: fixed;
+    top: 135px;
+    left: 50px;
+    animation: light 4s ease-in-out infinite;
+}
+
+@keyframes light {
+    0% {
+        filter: blur(20px);
+    }
+    50% {
+        filter: blur(100px);
+    }
+    100% {
+        filter: blur(20px);
+    }
+}
