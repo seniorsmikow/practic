@@ -1,0 +1,12 @@
+.menu__wrapper {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition: .5s;
+    position: fixed;
+    left: 0;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

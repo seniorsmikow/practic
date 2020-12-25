@@ -1,0 +1,18 @@
+.dragon__wrapper {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    animation: dragon 3s infinite ease-in-out;
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 50%;
+    }
+}
+
+@keyframes dragon {
+    100% {
+        transform: rotate(360deg);
+    }
+}
